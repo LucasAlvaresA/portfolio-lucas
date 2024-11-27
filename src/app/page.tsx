@@ -1,11 +1,10 @@
-"use client";
-
-import { ThemeToggle } from "@/components/theme-toggle";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
     return (
-        <div>
-            <ThemeToggle />
+        <div className="">
+            <main>hi</main>
+            <Footer />
         </div>
     );
 }
