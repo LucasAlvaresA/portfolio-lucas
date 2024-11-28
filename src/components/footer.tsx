@@ -10,7 +10,7 @@ export const Footer = () => {
     const { language } = useTranslateStore((state) => state);
 
     return (
-        <footer className="flex justify-between items-center p-4 bg-black bg-opacity-10 blur-10 mt-auto fixed bottom-0 w-full">
+        <footer className="flex justify-between items-center p-4 bg-black bg-opacity-10 blur-10 mt-auto fixed bottom-0 w-full h-14">
             <div className="flex justify-center gap-14  w-full ml-14">
                 <Link
                     href="https://github.com/LucasAlvaresA"
