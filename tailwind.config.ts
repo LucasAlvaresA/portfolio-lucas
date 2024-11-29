@@ -56,6 +56,22 @@ export default {
                 md: "calc(var(--radius) - 2px)",
                 sm: "calc(var(--radius) - 4px)",
             },
+            animation: {
+                fadeIn: "fadeIn 1s ease-in forwards",
+                slideIn: "slideIn 1s ease-out 0.5s forwards",
+                fadeInWithPulse:
+                    "fadeIn 1s ease-in forwards,  pulseFade 1s ease-in-out 1s infinite",
+            },
+            keyframes: {
+                fadeIn: {
+                    "0%": { opacity: "0" },
+                    "100%": { opacity: "1" },
+                },
+                pulseFade: {
+                    "0%, 100%": { opacity: "1" },
+                    "50%": { opacity: "0.7" },
+                },
+            },
         },
     },
     plugins: [require("tailwindcss-animate")],

@@ -1,17 +1,12 @@
-"use client";
-
 import { LanguageToggle } from "./language-toggle";
 import { ThemeToggle } from "./theme-toggle";
-import { useTranslateStore } from "@/stores/translate-store";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
-    const { language } = useTranslateStore((state) => state);
-
     return (
-        <footer className="flex justify-between items-center p-4 bg-black bg-opacity-10 blur-10 mt-auto fixed bottom-0 w-full h-14">
-            <div className="flex justify-center gap-14  w-full ml-14">
+        <div className="flex justify-between items-center p-4 bg-black bg-opacity-10 blur-10 mt-auto fixed bottom-0 w-full h-14">
+            <div className="flex gap-5 sm:gap-14 w-full xs:justify-start sm:justify-center xs:flex-row sm:flex-row sm:ml-14">
                 <Link
                     href="https://github.com/LucasAlvaresA"
                     target="_blank"
@@ -19,7 +14,7 @@ export const Footer = () => {
                     className="flex items-center gap-2 hover:text-secondary transition"
                 >
                     <FaGithub size={20} />
-                    GitHub
+                    <span className="hidden sm:block">GitHub</span>
                 </Link>
                 <Link
                     href="https://www.linkedin.com/in/lucas-alvaress/"
@@ -28,13 +23,14 @@ export const Footer = () => {
                     className="flex items-center gap-2 hover:text-secondary transition"
                 >
                     <FaLinkedin size={20} />
-                    LinkedIn
+                    <span className="hidden sm:block">LinkedIn</span>
                 </Link>
             </div>
-            <div className="flex items-center gap-3 ml-auto">
+
+            <div className="flex items-center gap-3 ml-auto xs:flex-row xs:justify-start sm:justify-end">
                 <LanguageToggle />
                 <ThemeToggle />
             </div>
-        </footer>
+        </div>
     );
 };
