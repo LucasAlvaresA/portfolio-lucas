@@ -1,5 +1,6 @@
 import { AboutMe } from "@/components/about-me";
 import { Footer } from "@/components/footer";
+import { Skills } from "@/components/skills";
 
 export default function Home() {
     return (
@@ -7,6 +8,9 @@ export default function Home() {
             <main>
                 <section>
                     <AboutMe />
+                </section>
+                <section>
+                    <Skills />
                 </section>
             </main>
             <footer>
