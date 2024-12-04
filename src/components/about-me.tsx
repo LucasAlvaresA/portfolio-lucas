@@ -5,7 +5,6 @@ import { aboutMeTranslate } from "@/translate/about-me";
 import Image from "next/image";
 import wallpaper from "../../public/wallpaper.jpg";
 import lightWallpaper from "../../public/light-wallpaper.jpg";
-import wallpaper2 from "../../public/wallpaper2.jpg";
 
 export const AboutMe = () => {
     const { language } = useTranslateStore((state) => state);
@@ -22,7 +21,7 @@ export const AboutMe = () => {
                     priority
                 />
                 <Image
-                    src={wallpaper2}
+                    src={wallpaper}
                     alt="Wallpaper"
                     fill
                     style={{ objectFit: "cover" }}

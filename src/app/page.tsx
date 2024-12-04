@@ -1,5 +1,6 @@
 import { AboutMe } from "@/components/about-me";
 import { Footer } from "@/components/footer";
+import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
 
 export default function Home() {
@@ -11,6 +12,9 @@ export default function Home() {
                 </section>
                 <section>
                     <Skills />
+                </section>
+                <section>
+                    <Projects />
                 </section>
             </main>
             <footer>
