@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-    title: "Portfolio - Lucas Alvares",
+    title: "Portfolio | Lucas Álvares",
     description: "In development",
 };
 
