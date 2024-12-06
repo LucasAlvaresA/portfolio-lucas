@@ -32,7 +32,7 @@ export const AboutMe = () => {
                         priority
                     />
                 </div>
-                <div className="block sm:hidden">
+                {/* <div className="block sm:hidden">
                     <Image
                         src={mobileWallpaper}
                         alt="Mobile Wallpaper"
@@ -49,7 +49,7 @@ export const AboutMe = () => {
                         className="absolute top-0 left-0 z-0 dark:hidden"
                         priority
                     />
-                </div>
+                </div> */}
                 <div className="relative z-10 text-center">
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-fadeInWithPulse">
                         Lucas Álvares

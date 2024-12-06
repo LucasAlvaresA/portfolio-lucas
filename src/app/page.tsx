@@ -1,7 +1,7 @@
 import { AboutMe } from "@/components/about-me";
-// import { Experiences } from "@/components/experiences";
+import { Experiences } from "@/components/experiences";
 import { Footer } from "@/components/footer";
-// import { Projects } from "@/components/projects";
+import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
 
 export default function Home() {
@@ -14,12 +14,12 @@ export default function Home() {
                 <section>
                     <Skills />
                 </section>
-                {/* <section>
+                <section>
                     <Projects />
                 </section>
                 <section className="pb-14">
                     <Experiences />
-                </section> */}
+                </section>
             </main>
             <footer>
                 <Footer />
