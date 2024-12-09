@@ -3,6 +3,6 @@ export const skillsTranslate = {
         title: "Skills",
     },
     br: {
-        title: "Hablidades",
+        title: "Habilidades",
     },
 };

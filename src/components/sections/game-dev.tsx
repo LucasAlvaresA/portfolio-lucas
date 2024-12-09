@@ -37,7 +37,7 @@ export const GameDev = () => {
                                 <Image
                                     src={zelda}
                                     alt="zelda gif"
-                                    priority
+                                    unoptimized
                                     className="max-w-full h-auto"
                                 />
                             </CarouselItem>
@@ -45,7 +45,7 @@ export const GameDev = () => {
                                 <Image
                                     src={samurai}
                                     alt="samurai gif"
-                                    priority
+                                    unoptimized
                                     className="max-w-full h-auto"
                                 />
                             </CarouselItem>
@@ -53,7 +53,7 @@ export const GameDev = () => {
                                 <Image
                                     src={lobby}
                                     alt="lobby gif"
-                                    priority
+                                    unoptimized
                                     className="max-w-full h-auto"
                                 />
                             </CarouselItem>

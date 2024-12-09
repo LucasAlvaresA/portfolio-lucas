@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# <div align="center"> Portfolio | Lucas Álvares </div>
+
+<div align="center">
+    <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"/>
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+    <img src="https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+</div>
+
+## Project Overview
+
+This is a **personal portfolio** project built with **Next.js**, **TypeScript**, **TailwindCSS**, and **Zustand**. The portfolio showcases my skills, experience, and projects in a modern, interactive layout. The design includes a **dark mode** toggle and a multi-language option (Portuguese and English).
+
+The main sections of the portfolio include:
+
+-   **Home**: A introduction with a creative design.
+-   **Skills**: A section to display my technical skills with icons and descriptions.
+-   **Projects**: A showcase of some of my work with brief descriptions and links to the source code or live demos.
+-   **Experience**: A section detailing my professional experience, including job roles, responsibilities, and accomplishments.
+-   **Footer**: Contains links to my LinkedIn, GitHub, and email.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to get a local copy of this project up and running.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   Clone the repo:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    ```bash
+    git clone git@github.com:LucasAlvaresA/portfolio-lucas.git
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-   Install NPM packages:
 
-## Learn More
+    ```bash
+    npm install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+-   Run the project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    This will start the development server at `http://localhost:3000`.
 
-## Deploy on Vercel
+### Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   **Dark Mode**: Toggle between light and dark themes for a personalized experience.
+-   **Multi-language Support**: Switch between Portuguese and English to view the content in your preferred language.
+-   **Interactive UI**: With smooth animations and dynamic content rendering.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Conclusion
+
+This portfolio serves as a personal website to showcase my skills, experiences, and projects. It uses modern web development practices and provides an interactive, visually appealing user experience. Feel free to explore, make modifications, or use this as a reference for your own portfolio.

@@ -1,24 +1,17 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Fira_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-
-const geistSans = localFont({
-    src: "./fonts/GeistVF.woff",
-    variable: "--font-geist-sans",
-    weight: "100 900",
-});
-const geistMono = localFont({
-    src: "./fonts/GeistMonoVF.woff",
-    variable: "--font-geist-mono",
-    weight: "100 900",
-});
 
 export const metadata: Metadata = {
     title: "Portfolio | Lucas Álvares",
     description: "In development",
 };
 
+const firaSans = Fira_Sans({
+    subsets: ["latin"],
+    weight: ["400", "700"],
+});
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -26,9 +19,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-            >
+            <body className={`${firaSans.className} antialiased`}>
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="dark"
