@@ -5,4 +5,7 @@ export const skillsTranslate = {
     br: {
         title: "Habilidades",
     },
+    es: {
+        title: "Habilidades",
+    },
 };

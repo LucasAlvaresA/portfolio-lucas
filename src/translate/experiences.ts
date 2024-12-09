@@ -5,4 +5,7 @@ export const experiencesTranslate = {
     br: {
         title: "Experiências",
     },
+    es: {
+        title: "Experiencias",
+    },
 };

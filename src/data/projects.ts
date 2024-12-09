@@ -11,6 +11,7 @@ export const projectsData: Projects[] = [
         description: {
             en: "Z social network interface made with Next.js and Tailwind CSS",
             br: "Interface de rede social Z feita com Next.js e Tailwind CSS",
+            es: "Interfaz de red social Z hecha con Next.js y Tailwind CSS",
         },
     },
     {
@@ -29,6 +30,7 @@ export const projectsData: Projects[] = [
         description: {
             en: "A store created with Next.js, Shadcn UI, TailwindCSS and Zustand",
             br: "Uma loja criada com Next.js, Shadcn UI, TailwindCSS e Zustand",
+            es: "Una tienda creada con Next.js, Shadcn UI, TailwindCSS y Zustand",
         },
     },
     {
@@ -41,6 +43,7 @@ export const projectsData: Projects[] = [
         description: {
             en: "A modern website created with Next.js, Tailwind CSS and animations with Framer",
             br: "Um site moderno criado com Next.js, Tailwind CSS e animações com Framer",
+            es: "Un sitio web moderno creado con Next.js, Tailwind CSS y animaciones con Framer",
         },
     },
     {
@@ -53,6 +56,7 @@ export const projectsData: Projects[] = [
         description: {
             en: "Starbucks homepage created with HTML/CSS",
             br: "Página inicial do Starbucks criada com HTML/CSS",
+            es: "Página principal de Starbucks creada con HTML/CSS",
         },
     },
     {
@@ -65,6 +69,7 @@ export const projectsData: Projects[] = [
         description: {
             en: "Layout based on Tesla homepage, only with HTML/CSS",
             br: "Layout baseado na página inicial da Tesla, apenas com HTML/CSS",
+            es: "Diseño basado en la página principal de Tesla, solo con HTML/CSS",
         },
     },
     {
@@ -77,6 +82,7 @@ export const projectsData: Projects[] = [
         description: {
             en: "Awax template created with HTML/CSS",
             br: "Awax template criado com HTML/CSS",
+            es: "Plantilla Awax creada con HTML/CSS",
         },
     },
     {
@@ -89,6 +95,7 @@ export const projectsData: Projects[] = [
         description: {
             en: "Shopping cart created with Javascript and CSS",
             br: "Carrinho de compras criado com Javascript e CSS",
+            es: "Carrito de compras creado con Javascript y CSS",
         },
     },
     {
@@ -101,6 +108,7 @@ export const projectsData: Projects[] = [
         description: {
             en: "A simple memory game created with ReactJS",
             br: "Um jogo de memória simples criado com ReactJS",
+            es: "Un juego de memoria simple creado con ReactJS",
         },
     },
     {
@@ -113,6 +121,7 @@ export const projectsData: Projects[] = [
         description: {
             en: "Zelda made with Kaboom.js!",
             br: "Zelda feito com Kaboom.js!",
+            es: "¡Zelda hecho con Kaboom.js!",
         },
     },
 ];

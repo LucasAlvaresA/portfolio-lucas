@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-This is a **personal portfolio** project built with **Next.js**, **TypeScript**, **TailwindCSS**, and **Zustand**. The portfolio showcases my skills, experience, and projects in a modern, interactive layout. The design includes a **dark mode** toggle and a multi-language option (Portuguese and English).
+This is a **personal portfolio** project built with **Next.js**, **TypeScript**, **TailwindCSS**, and **Zustand**. The portfolio showcases my skills, experience, and projects in a modern, interactive layout. The design includes a **dark mode** toggle and a multi-language option (Portuguese, English and Spanish).
 
 The main sections of the portfolio include:
 
@@ -47,7 +47,7 @@ Follow these steps to get a local copy of this project up and running.
 ### Features
 
 -   **Dark Mode**: Toggle between light and dark themes for a personalized experience.
--   **Multi-language Support**: Switch between Portuguese and English to view the content in your preferred language.
+-   **Multi-language Support**: Switch between Portuguese, English and Spanish to view the content in your preferred language.
 -   **Interactive UI**: With smooth animations and dynamic content rendering.
 
 ## Conclusion

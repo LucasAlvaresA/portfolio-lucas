@@ -5,4 +5,7 @@ export const projectsTranslate = {
     br: {
         title: "Projetos",
     },
+    es: {
+        title: "Proyectos",
+    },
 };

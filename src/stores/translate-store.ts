@@ -15,6 +15,8 @@ const getInitialLanguage = (): LanguageType => {
         return "en";
     } else if (browserLanguage.startsWith("pt")) {
         return "br";
+    } else if (browserLanguage.startsWith("es")) {
+        return "es";
     }
     return "en";
 };

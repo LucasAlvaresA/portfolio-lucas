@@ -6,4 +6,7 @@ export const aboutMeTranslate = {
     br: {
         description: "Desenvolvedor Front-end & Desenvolvedor de Jogos",
     },
+    es: {
+        description: "Desarrollador Front-end & Desarrollador de Juegos",
+    },
 };

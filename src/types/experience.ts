@@ -3,5 +3,6 @@ export type Experience = {
     description: {
         br: string;
         en: string;
+        es: string;
     };
 };

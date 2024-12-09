@@ -8,5 +8,6 @@ export type Projects = {
     description: {
         en: string;
         br: string;
+        es: string;
     };
 };
