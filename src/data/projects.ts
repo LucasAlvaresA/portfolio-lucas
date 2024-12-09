@@ -1,8 +1,10 @@
-export const projectsData = [
+import { Projects } from "@/types/project";
+
+export const projectsData: Projects[] = [
     {
         id: 1,
         project: "Z",
-        image: "/wallpaper.jpg",
+        image: "/projects/z-wallpaper.png",
         github: "https://github.com/LucasAlvaresA/Z",
         demo: "https://z-lucas.vercel.app/home",
         technologies: ["Next.js", "Typescript", "TailwindCSS"],
@@ -14,7 +16,7 @@ export const projectsData = [
     {
         id: 2,
         project: "Shadcn-UI Store",
-        image: "/wallpaper.jpg",
+        image: "/projects/shadcn-store-wallpaper.png",
         github: "https://github.com/LucasAlvaresA/shadcn-ui-store",
         demo: "https://shadcn-store-lucas.vercel.app/",
         technologies: [
@@ -32,7 +34,7 @@ export const projectsData = [
     {
         id: 3,
         project: "Metaverse Madness",
-        image: "/wallpaper.jpg",
+        image: "/projects/metaverse-madness-wallpaper.png",
         github: "https://github.com/LucasAlvaresA/metaverse-madness",
         demo: "https://metaverse-lucasa.vercel.app/",
         technologies: ["Next.js", "TailwindCSS", "Framer"],
@@ -44,7 +46,7 @@ export const projectsData = [
     {
         id: 4,
         project: "Home Starbucks",
-        image: "/wallpaper.jpg",
+        image: "/projects/home-starbucks-wallpaper.png",
         github: "https://github.com/LucasAlvaresA/home-starbucks",
         demo: "https://lucasalvaresa.github.io/home-starbucks/",
         technologies: ["HTML", "CSS"],
@@ -56,7 +58,7 @@ export const projectsData = [
     {
         id: 5,
         project: "Devsla",
-        image: "/wallpaper.jpg",
+        image: "/projects/devsla-wallpaper.png",
         github: "https://github.com/LucasAlvaresA/devsla",
         demo: "https://lucasalvaresa.github.io/devsla/",
         technologies: ["HTML", "CSS"],
@@ -68,7 +70,7 @@ export const projectsData = [
     {
         id: 6,
         project: "Awax Template",
-        image: "/wallpaper.jpg",
+        image: "/projects/awax-template-wallpaper.png",
         github: "https://github.com/LucasAlvaresA/awax-template",
         demo: "https://lucasalvaresa.github.io/awax-template/",
         technologies: ["HTML", "CSS"],
@@ -80,7 +82,7 @@ export const projectsData = [
     {
         id: 7,
         project: "Pizza Cart",
-        image: "/wallpaper.jpg",
+        image: "/projects/pizza-cart-wallpaper.png",
         github: "https://github.com/LucasAlvaresA/pizza-cart",
         demo: "https://lucasalvaresa.github.io/pizza-cart/",
         technologies: ["HTML", "CSS", "Javascript"],
@@ -92,7 +94,7 @@ export const projectsData = [
     {
         id: 8,
         project: "Dev Memory",
-        image: "/wallpaper.jpg",
+        image: "/projects/devmemory-wallpaper.png",
         github: "https://github.com/LucasAlvaresA/devmemory",
         demo: "https://lucasalvares-devmemory.vercel.app/",
         technologies: ["React", "Typescript", "Styled-Components"],
@@ -104,7 +106,7 @@ export const projectsData = [
     {
         id: 9,
         project: "Zelda Kaboom",
-        image: "/wallpaper.jpg",
+        image: "/projects/zelda-kaboom-wallpaper.png",
         github: "https://github.com/LucasAlvaresA/zelda-kaboom",
         demo: "https://lucasalvaresa.github.io/zelda-kaboom/",
         technologies: ["HTML", "Javascript", "Kaboom.js"],

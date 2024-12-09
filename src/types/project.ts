@@ -5,4 +5,8 @@ export type Projects = {
     github: string;
     demo: string;
     technologies: string[];
+    description: {
+        en: string;
+        br: string;
+    };
 };

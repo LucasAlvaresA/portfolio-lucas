@@ -17,11 +17,11 @@ export const Projects = () => {
                 <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
                     {projectsTranslate[language]?.title}
                 </h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xg:grid-cols-4 gap-8 p-5">
                     {projectsData.map((project) => (
                         <div
                             key={project.id}
-                            className="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md p-4 flex flex-col border-2 border-transparent hover:border-gray-500 dark:hover:border-gray-400 transition-all"
+                            className="bg-gray-200 dark:bg-gray-800 rounded-lg shadow-md p-4 flex flex-col border-2 hover:border-gray-500 dark:hover:border-gray-400 transition-all"
                         >
                             <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                                 {project.project}

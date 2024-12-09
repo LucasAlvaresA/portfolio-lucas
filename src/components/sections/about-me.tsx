@@ -3,10 +3,10 @@
 import { useTranslateStore } from "@/stores/translate-store";
 import { aboutMeTranslate } from "@/translate/about-me";
 import Image from "next/image";
-import wallpaper from "../../../public/wallpaper.jpg";
-import lightWallpaper from "../../../public/light-wallpaper.jpg";
-import mobileWallpaper from "../../../public/mobile-wallpaper.jpg";
-import lightMobileWallpaper from "../../../public/light-mobile-wallpaper.jpg";
+import wallpaper from "../../../public/wallpapers/wallpaper.jpg";
+import lightWallpaper from "../../../public/wallpapers/light-wallpaper.jpg";
+import mobileWallpaper from "../../../public/wallpapers/mobile-wallpaper.jpg";
+import lightMobileWallpaper from "../../../public/wallpapers/light-mobile-wallpaper.jpg";
 
 export const AboutMe = () => {
     const { language } = useTranslateStore((state) => state);
