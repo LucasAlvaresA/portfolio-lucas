@@ -32,8 +32,8 @@ export const experiencesData: Experience[] = [
     {
         id: 5,
         description: {
-            br: "Atualmente, atuo na L5 Team, desenvolvendo novos sistemas para web, aplicativos com React Native e explorando o desenvolvimento de jogos.",
-            en: "Currently, I work at L5 Team, developing new web systems, applications with React Native, and exploring game development.",
+            br: "Atualmente, atuo na L5 Team, desenvolvendo novos sistemas para web, aplicativos com React Native e explorando o desenvolvimento de jogos. Também estou aprofundando meus conhecimentos em Node.js, para futuramente trabalhar também como desenvolvedor fullstack.",
+            en: "Currently, I work at L5 Team, developing new web systems, applications with React Native, and exploring game development. I am also deepening my knowledge in Node.js, aiming to eventually work as a fullstack developer.",
         },
     },
 ];
