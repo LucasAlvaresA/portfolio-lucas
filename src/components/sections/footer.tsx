@@ -1,7 +1,7 @@
-import { LanguageToggle } from "./language-toggle";
-import { ThemeToggle } from "./theme-toggle";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { ThemeToggle } from "../theme-toggle";
+import { LanguageToggle } from "../language-toggle";
 
 export const Footer = () => {
     return (
