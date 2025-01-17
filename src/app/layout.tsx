@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
     title: "Portfolio | Lucas Álvares",
-    description: "In development",
+    description: "Lucas Álvares | Front-end developer",
 };
 
 const firaSans = Fira_Sans({
