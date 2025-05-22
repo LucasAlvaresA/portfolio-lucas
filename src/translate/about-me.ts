@@ -1,12 +1,12 @@
 export const aboutMeTranslate = {
     name: "Lucas Álvares",
     en: {
-        description: "Front-end Developer & Game Developer",
+        description: "Front-end Developer",
     },
     br: {
-        description: "Desenvolvedor Front-end & Desenvolvedor de Jogos",
+        description: "Desenvolvedor Front-end",
     },
     es: {
-        description: "Desarrollador Front-end & Desarrollador de Juegos",
+        description: "Desarrollador Front-end",
     },
 };
