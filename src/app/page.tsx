@@ -1,4 +1,5 @@
 import { AboutMe } from "@/components/sections/about-me";
+import { Clients } from "@/components/sections/clients";
 import { Experiences } from "@/components/sections/experiences";
 import { Footer } from "@/components/sections/footer";
 import { GameDev } from "@/components/sections/game-dev";
@@ -20,6 +21,9 @@ export default function Home() {
                 </section>
                 <section id="experiences" aria-label="Experiences">
                     <Experiences />
+                </section>
+                <section id="clients" aria-label="Clients">
+                    <Clients />
                 </section>
                 <section
                     id="game-dev"

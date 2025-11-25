@@ -13,7 +13,7 @@ export const GameDev = () => {
     const { language } = useTranslateStore((state) => state);
 
     return (
-        <div className="w-full bg-white dark:bg-black py-16">
+        <div className="w-full bg-gray-200 dark:bg-gray-900 py-16">
             <div className="max-w-4xl mx-auto px-4">
                 <h1 className="text-3xl font-bold text-gray-800 dark:text-white text-center mb-4">
                     {gameDevTranslate[language]?.title}
