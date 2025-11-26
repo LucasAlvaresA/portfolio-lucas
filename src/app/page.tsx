@@ -16,14 +16,14 @@ export default function Home() {
                 <section id="skills" aria-label="Skills">
                     <Skills />
                 </section>
-                <section id="projects" aria-label="Projects">
-                    <Projects />
+                <section id="clients" aria-label="Clients">
+                    <Clients />
                 </section>
                 <section id="experiences" aria-label="Experiences">
                     <Experiences />
                 </section>
-                <section id="clients" aria-label="Clients">
-                    <Clients />
+                <section id="projects" aria-label="Projects">
+                    <Projects />
                 </section>
                 <section
                     id="game-dev"
