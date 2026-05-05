@@ -2,7 +2,7 @@ import { AboutMe } from "@/components/sections/about-me";
 import { Clients } from "@/components/sections/clients";
 import { Experiences } from "@/components/sections/experiences";
 import { Footer } from "@/components/sections/footer";
-import { GameDev } from "@/components/sections/game-dev";
+// import { GameDev } from "@/components/sections/game-dev";
 import { Projects } from "@/components/sections/projects";
 import { Skills } from "@/components/sections/skills";
 
@@ -22,16 +22,16 @@ export default function Home() {
                 <section id="experiences" aria-label="Experiences">
                     <Experiences />
                 </section>
-                <section id="projects" aria-label="Projects">
+                <section id="projects" aria-label="Projects" className="pb-14">
                     <Projects />
                 </section>
-                <section
+                {/* <section
                     id="game-dev"
                     aria-label="Game Development"
                     className="pb-14"
                 >
                     <GameDev />
-                </section>
+                </section> */}
             </main>
             <footer>
                 <Footer />
