@@ -1,78 +1,206 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTranslateStore } from "@/stores/translate-store";
 import { projectsTranslate } from "@/translate/projects";
-import { FaGithub } from "react-icons/fa";
-import { GrDeploy } from "react-icons/gr";
 import { projectsData } from "@/data/projects";
 import { Badge } from "@/components/ui/badge";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+    type CarouselApi,
+} from "@/components/ui/carousel";
 import Image from "next/image";
+import { FaFilePdf } from "react-icons/fa";
+import { MdDashboard } from "react-icons/md";
 
 export const Projects = () => {
     const { language } = useTranslateStore((state) => state);
 
+    const [api, setApi] = useState<CarouselApi>();
+    const [current, setCurrent] = useState(1);
+
+    useEffect(() => {
+        if (!api) return;
+
+        const update = () => {
+            setCurrent(api.selectedScrollSnap() + 1);
+        };
+
+        update();
+        api.on("select", update);
+
+        return () => {
+            api.off("select", update);
+        };
+    }, [api]);
+
     return (
-        <div className="w-full bg-white dark:bg-black py-16">
-            <div className="max-w-6xl mx-auto text-center">
-                <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
-                    {projectsTranslate[language]?.title}
-                </h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xg:grid-cols-4 gap-8 p-5">
-                    {projectsData.map((project) => (
-                        <div
-                            key={project.id}
-                            className="bg-gray-200 dark:bg-gray-800 rounded-lg shadow-md p-4 flex flex-col border-2 hover:border-gray-500 dark:hover:border-gray-400 transition-all"
-                        >
-                            <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
-                                {project.project}
-                            </h2>
-                            <div className="relative w-full h-40 mb-4">
-                                <Image
-                                    src={project.image}
-                                    alt={`${project.project} image`}
-                                    className="object-cover rounded-md"
-                                    fill
-                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                    priority={true}
-                                />
-                            </div>
-                            <p className="text-gray-600 dark:text-gray-300 mb-4 flex-grow">
-                                {project.description[language]}
-                            </p>
-                            <div className="flex flex-wrap gap-2 mb-4">
-                                {project.technologies.map((tech, index) => (
-                                    <Badge
-                                        key={index}
-                                        className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
-                                    >
-                                        {tech}
-                                    </Badge>
-                                ))}
-                            </div>
-                            <div className="flex justify-between">
-                                <a
-                                    href={project.github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition"
-                                >
-                                    <FaGithub />
-                                    GitHub
-                                </a>
-                                <a
-                                    href={project.demo}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition"
-                                >
-                                    <GrDeploy />
-                                    Deploy
-                                </a>
-                            </div>
-                        </div>
-                    ))}
+        <section className="w-full bg-white dark:bg-black py-20">
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="flex flex-col items-center gap-3 mb-12">
+                    <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white">
+                        {projectsTranslate[language]?.title}
+                    </h1>
+
+                    <span className="text-sm text-gray-500 dark:text-gray-400">
+                        {current} / {projectsData.length}
+                    </span>
                 </div>
+
+                <Carousel
+                    setApi={setApi}
+                    opts={{
+                        align: "center",
+                        loop: true,
+                    }}
+                    className="w-full"
+                >
+                    <CarouselContent>
+                        {projectsData.map((project) => (
+                            <CarouselItem
+                                key={project.id}
+                                className="basis-full"
+                            >
+                                <article
+                                    className="
+                                        overflow-hidden
+                                        rounded-3xl
+                                        border
+                                        border-gray-200
+                                        dark:border-gray-800
+                                        bg-gray-50
+                                        dark:bg-zinc-900/70
+                                        backdrop-blur-sm
+                                        shadow-sm
+                                        hover:shadow-xl
+                                        transition-all
+                                        duration-300
+                                    "
+                                >
+                                    <div className="grid lg:grid-cols-2">
+                                        {/* IMAGEM */}
+                                        <div className="relative min-h-[280px] lg:min-h-[500px]">
+                                            <Image
+                                                src={project.image}
+                                                alt={project.project}
+                                                fill
+                                                priority
+                                                className="
+                                                    object-cover
+                                                    transition-transform
+                                                    duration-500
+                                                    hover:scale-105
+                                                "
+                                            />
+                                        </div>
+
+                                        {/* CONTEÚDO */}
+                                        <div className="p-8 lg:p-10 flex flex-col justify-center">
+                                            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                                                {project.project}
+                                            </h2>
+
+                                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                                                {project.description[language]}
+                                            </p>
+
+                                            <div className="mb-6">
+                                                <h3 className="font-semibold text-gray-900 dark:text-white mb-3">
+                                                    Indicadores analisados
+                                                </h3>
+
+                                                <div className="flex flex-wrap gap-2">
+                                                    {project.highlights.map(
+                                                        (highlight, index) => (
+                                                            <Badge
+                                                                key={index}
+                                                                className="rounded-full px-3 py-1"
+                                                            >
+                                                                {highlight}
+                                                            </Badge>
+                                                        ),
+                                                    )}
+                                                </div>
+                                            </div>
+
+                                            <div className="mb-8">
+                                                <div className="flex flex-wrap gap-2">
+                                                    {project.technologies.map(
+                                                        (tech, index) => (
+                                                            <Badge
+                                                                key={index}
+                                                                variant="secondary"
+                                                                className="rounded-full px-3 py-1"
+                                                            >
+                                                                {tech}
+                                                            </Badge>
+                                                        ),
+                                                    )}
+                                                </div>
+                                            </div>
+
+                                            <div className="flex flex-col sm:flex-row gap-3">
+                                                <a
+                                                    href={project.pdf}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="
+                                                        flex
+                                                        items-center
+                                                        justify-center
+                                                        gap-2
+                                                        rounded-xl
+                                                        bg-red-600
+                                                        text-white
+                                                        px-5
+                                                        py-3
+                                                        hover:bg-red-700
+                                                        transition
+                                                    "
+                                                >
+                                                    <FaFilePdf />
+                                                    Ver PDF
+                                                </a>
+
+                                                <a
+                                                    href={project.gallery}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="
+                                                        flex
+                                                        items-center
+                                                        justify-center
+                                                        gap-2
+                                                        rounded-xl
+                                                        border
+                                                        border-gray-300
+                                                        dark:border-gray-700
+                                                        px-5
+                                                        py-3
+                                                        hover:bg-gray-100
+                                                        dark:hover:bg-gray-800
+                                                        transition
+                                                    "
+                                                >
+                                                    <MdDashboard />
+                                                    Ver Dashboard
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+
+                    <CarouselPrevious className="hidden md:flex -left-6" />
+                    <CarouselNext className="hidden md:flex -right-6" />
+                </Carousel>
             </div>
-        </div>
+        </section>
     );
 };

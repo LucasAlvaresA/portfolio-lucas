@@ -5,8 +5,8 @@ import { LanguageToggle } from "../language-toggle";
 
 export const Footer = () => {
     return (
-        <div className="flex justify-between items-center p-4 bg-black bg-opacity-10 blur-10 mt-auto fixed bottom-0 w-full h-14">
-            <div className="flex gap-5 sm:gap-14 w-full xs:justify-start sm:justify-center xs:flex-row sm:flex-row sm:ml-14">
+        <div className="fixed bottom-0 w-full h-14 flex items-center justify-between p-8 bg-black/10 backdrop-blur-md">
+            <div className="flex items-center gap-5 sm:gap-14">
                 <Link
                     href="https://github.com/LucasAlvaresA"
                     target="_blank"
@@ -16,6 +16,7 @@ export const Footer = () => {
                     <FaGithub size={20} />
                     <span className="hidden sm:block">GitHub</span>
                 </Link>
+
                 <Link
                     href="https://www.linkedin.com/in/lucas-alvaress/"
                     target="_blank"
@@ -27,7 +28,7 @@ export const Footer = () => {
                 </Link>
             </div>
 
-            <div className="flex items-center gap-3 ml-auto xs:flex-row xs:justify-start sm:justify-end">
+            <div className="flex items-center gap-3">
                 <LanguageToggle />
                 <ThemeToggle />
             </div>

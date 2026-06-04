@@ -1,12 +1,15 @@
 export const aboutMeTranslate = {
     name: "Lucas Álvares",
     en: {
-        description: "Front-end Developer",
+        description: "Data Analyst",
+        subdescription: "Power BI • SQL • Python",
     },
     br: {
-        description: "Desenvolvedor Front-end",
+        description: "Analista de Dados",
+        subdescription: "Power BI • SQL • Python",
     },
     es: {
-        description: "Desarrollador Front-end",
+        description: "Analista de Datos",
+        subdescription: "Power BI • SQL • Python",
     },
 };
