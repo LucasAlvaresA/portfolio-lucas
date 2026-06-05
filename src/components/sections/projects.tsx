@@ -82,11 +82,10 @@ export const Projects = () => {
                                     "
                                 >
                                     <div className="grid lg:grid-cols-2">
-                                        {/* IMAGEM */}
                                         <div className="relative min-h-[280px] lg:min-h-[500px]">
                                             <Image
                                                 src={project.image}
-                                                alt={project.project}
+                                                alt={project.project[language]}
                                                 fill
                                                 priority
                                                 className="
@@ -98,10 +97,9 @@ export const Projects = () => {
                                             />
                                         </div>
 
-                                        {/* CONTEÚDO */}
                                         <div className="p-8 lg:p-10 flex flex-col justify-center">
                                             <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                                                {project.project}
+                                                {project.project[language]}
                                             </h2>
 
                                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
@@ -110,7 +108,11 @@ export const Projects = () => {
 
                                             <div className="mb-6">
                                                 <h3 className="font-semibold text-gray-900 dark:text-white mb-3">
-                                                    Indicadores analisados
+                                                    {
+                                                        projectsTranslate[
+                                                            language
+                                                        ].analyzedMetrics
+                                                    }
                                                 </h3>
 
                                                 <div className="flex flex-wrap gap-2">
@@ -120,7 +122,11 @@ export const Projects = () => {
                                                                 key={index}
                                                                 className="rounded-full px-3 py-1"
                                                             >
-                                                                {highlight}
+                                                                {
+                                                                    highlight[
+                                                                        language
+                                                                    ]
+                                                                }
                                                             </Badge>
                                                         ),
                                                     )}
@@ -136,7 +142,7 @@ export const Projects = () => {
                                                                 variant="secondary"
                                                                 className="rounded-full px-3 py-1"
                                                             >
-                                                                {tech}
+                                                                {tech[language]}
                                                             </Badge>
                                                         ),
                                                     )}
@@ -163,7 +169,11 @@ export const Projects = () => {
                                                     "
                                                 >
                                                     <FaFilePdf />
-                                                    Ver PDF
+                                                    {
+                                                        projectsTranslate[
+                                                            language
+                                                        ].viewPdf
+                                                    }
                                                 </a>
 
                                                 <a
@@ -187,7 +197,11 @@ export const Projects = () => {
                                                     "
                                                 >
                                                     <MdDashboard />
-                                                    Ver Dashboard
+                                                    {
+                                                        projectsTranslate[
+                                                            language
+                                                        ].viewDashboard
+                                                    }
                                                 </a>
                                             </div>
                                         </div>
