@@ -82,19 +82,22 @@ export const Projects = () => {
                                     "
                                 >
                                     <div className="grid lg:grid-cols-2">
-                                        <div className="relative min-h-[280px] lg:min-h-[500px]">
-                                            <Image
-                                                src={project.image}
-                                                alt={project.project[language]}
-                                                fill
-                                                priority
-                                                className="
-                                                    object-cover
-                                                    transition-transform
-                                                    duration-500
-                                                    hover:scale-105
-                                                "
-                                            />
+                                        <div className="p-6 lg:p-8 flex items-center justify-center bg-zinc-100 dark:bg-zinc-800/30 rounded-t-3xl lg:rounded-tr-none lg:rounded-l-3xl">
+                                            <div className="w-full shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-zinc-800">
+                                                <Image
+                                                    src={project.image}
+                                                    alt={
+                                                        project.project[
+                                                            language
+                                                        ]
+                                                    }
+                                                    width={0}
+                                                    height={0}
+                                                    sizes="100vw"
+                                                    priority
+                                                    className="w-full h-auto object-cover"
+                                                />
+                                            </div>
                                         </div>
 
                                         <div className="p-8 lg:p-10 flex flex-col justify-center">
