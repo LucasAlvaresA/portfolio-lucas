@@ -64,7 +64,7 @@ export const AboutMe = () => {
                         href="#projects"
                         className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fadeIn"
                     >
-                        Ver Projetos
+                        {aboutMeTranslate[language]?.projectsButton}
                     </a>
                 </div>
             </div>

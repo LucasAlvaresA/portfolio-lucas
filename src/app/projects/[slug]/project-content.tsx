@@ -97,7 +97,7 @@ export function ProjectContent({ project }: Props) {
                     <div className="grid grid-cols-3 items-center h-full">
                         <div>
                             <Link
-                                href="/"
+                                href="/#projects"
                                 className="
                                     inline-flex
                                     items-center
