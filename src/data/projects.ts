@@ -61,11 +61,38 @@ export const projectsData = [
                 es: "Modelado de Datos",
             },
         ],
+        methodologies: [
+            {
+                br: "ETL",
+                en: "ETL",
+                es: "ETL",
+            },
+            {
+                br: "Modelagem Dimensional",
+                en: "Dimensional Modeling",
+                es: "Modelado Dimensional",
+            },
+            {
+                br: "Definição de KPIs",
+                en: "KPI Definition",
+                es: "Definición de KPIs",
+            },
+            {
+                br: "Storytelling com Dados",
+                en: "Data Storytelling",
+                es: "Storytelling de Datos",
+            },
+            {
+                br: "Análise Exploratória",
+                en: "Exploratory Analysis",
+                es: "Análisis Exploratorio",
+            },
+        ],
         pdf: "/pdfs/analise-vendas-globais.pdf",
-        gallery: "/projects/vendas-globais",
+        slug: "vendas-globais",
     },
     {
-        id: 6,
+        id: 2,
         project: {
             br: "Dashboard de Análise de Dados de Logística",
             en: "Logistics Data Analytics Dashboard",
@@ -126,8 +153,35 @@ export const projectsData = [
                 es: "Análisis de Datos",
             },
         ],
+        methodologies: [
+            {
+                br: "ETL",
+                en: "ETL",
+                es: "ETL",
+            },
+            {
+                br: "Definição de KPIs",
+                en: "KPI Definition",
+                es: "Definición de KPIs",
+            },
+            {
+                br: "Análise de Performance",
+                en: "Performance Analysis",
+                es: "Análisis de Rendimiento",
+            },
+            {
+                br: "Análise Exploratória",
+                en: "Exploratory Analysis",
+                es: "Análisis Exploratorio",
+            },
+            {
+                br: "Visualização de Dados",
+                en: "Data Visualization",
+                es: "Visualización de Datos",
+            },
+        ],
         pdf: "/pdfs/dashboard-logistica.pdf",
-        gallery: "/projects/logistica",
+        slug: "logistica",
     },
     {
         id: 3,
@@ -191,8 +245,35 @@ export const projectsData = [
                 es: "Storytelling de Datos",
             },
         ],
+        methodologies: [
+            {
+                br: "Análise Temporal",
+                en: "Time Series Analysis",
+                es: "Análisis Temporal",
+            },
+            {
+                br: "Storytelling com Dados",
+                en: "Data Storytelling",
+                es: "Storytelling de Datos",
+            },
+            {
+                br: "Análise Exploratória",
+                en: "Exploratory Analysis",
+                es: "Análisis Exploratorio",
+            },
+            {
+                br: "Comparação de Indicadores",
+                en: "Indicator Comparison",
+                es: "Comparación de Indicadores",
+            },
+            {
+                br: "Visualização Financeira",
+                en: "Financial Visualization",
+                es: "Visualización Financiera",
+            },
+        ],
         pdf: "/pdfs/dashboard-mercado-acoes.pdf",
-        gallery: "/projects/mercado-acoes",
+        slug: "mercado-acoes",
     },
     {
         id: 4,
@@ -256,8 +337,35 @@ export const projectsData = [
                 es: "Excel",
             },
         ],
+        methodologies: [
+            {
+                br: "People Analytics",
+                en: "People Analytics",
+                es: "People Analytics",
+            },
+            {
+                br: "Definição de KPIs",
+                en: "KPI Definition",
+                es: "Definición de KPIs",
+            },
+            {
+                br: "Análise Exploratória",
+                en: "Exploratory Analysis",
+                es: "Análisis Exploratorio",
+            },
+            {
+                br: "Visualização de Dados",
+                en: "Data Visualization",
+                es: "Visualización de Datos",
+            },
+            {
+                br: "Análise de Indicadores",
+                en: "Metrics Analysis",
+                es: "Análisis de Indicadores",
+            },
+        ],
         pdf: "/pdfs/dashboard-rh.pdf",
-        gallery: "/projects/rh",
+        slug: "rh",
     },
     {
         id: 5,
@@ -321,11 +429,38 @@ export const projectsData = [
                 es: "Modelado Analítico",
             },
         ],
+        methodologies: [
+            {
+                br: "Segmentação de Clientes",
+                en: "Customer Segmentation",
+                es: "Segmentación de Clientes",
+            },
+            {
+                br: "Análise Financeira",
+                en: "Financial Analysis",
+                es: "Análisis Financiero",
+            },
+            {
+                br: "Definição de KPIs",
+                en: "KPI Definition",
+                es: "Definición de KPIs",
+            },
+            {
+                br: "Storytelling com Dados",
+                en: "Data Storytelling",
+                es: "Storytelling de Datos",
+            },
+            {
+                br: "Análise Exploratória",
+                en: "Exploratory Analysis",
+                es: "Análisis Exploratorio",
+            },
+        ],
         pdf: "/pdfs/dashboard-analise-financeira.pdf",
-        gallery: "/projects/financeiro",
+        slug: "financeiro",
     },
     {
-        id: 2,
+        id: 6,
         project: {
             br: "Dashboard Comercial e Performance de Vendas",
             en: "Sales Performance Dashboard",
@@ -386,7 +521,34 @@ export const projectsData = [
                 es: "Excel",
             },
         ],
+        methodologies: [
+            {
+                br: "Análise Comercial",
+                en: "Sales Analysis",
+                es: "Análisis Comercial",
+            },
+            {
+                br: "Definição de KPIs",
+                en: "KPI Definition",
+                es: "Definición de KPIs",
+            },
+            {
+                br: "Análise de Rentabilidade",
+                en: "Profitability Analysis",
+                es: "Análisis de Rentabilidad",
+            },
+            {
+                br: "Análise Exploratória",
+                en: "Exploratory Analysis",
+                es: "Análisis Exploratorio",
+            },
+            {
+                br: "Visualização de Dados",
+                en: "Data Visualization",
+                es: "Visualización de Datos",
+            },
+        ],
         pdf: "/pdfs/analise-venda-custo-lucro.pdf",
-        gallery: "/projects/comercial",
+        slug: "comercial",
     },
 ];

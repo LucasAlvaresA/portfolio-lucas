@@ -2,6 +2,8 @@ export const projectsTranslate = {
     br: {
         title: "Projetos",
         analyzedMetrics: "Indicadores analisados",
+        methodologies: "Metodologias",
+        technologies: "Tecnologias",
         viewPdf: "Ver PDF",
         viewDashboard: "Ver Dashboard",
     },
@@ -9,6 +11,8 @@ export const projectsTranslate = {
     en: {
         title: "Projects",
         analyzedMetrics: "Analyzed Metrics",
+        methodologies: "Methodologies",
+        technologies: "Technologies",
         viewPdf: "View PDF",
         viewDashboard: "View Dashboard",
     },
@@ -16,6 +20,8 @@ export const projectsTranslate = {
     es: {
         title: "Proyectos",
         analyzedMetrics: "Indicadores Analizados",
+        methodologies: "Metodologías",
+        technologies: "Tecnologías",
         viewPdf: "Ver PDF",
         viewDashboard: "Ver Panel",
     },

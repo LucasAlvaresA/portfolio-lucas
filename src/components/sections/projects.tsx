@@ -16,6 +16,7 @@ import {
 import Image from "next/image";
 import { FaFilePdf } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
+import Link from "next/link";
 
 export const Projects = () => {
     const { language } = useTranslateStore((state) => state);
@@ -83,7 +84,17 @@ export const Projects = () => {
                                 >
                                     <div className="grid lg:grid-cols-2">
                                         <div className="p-6 lg:p-8 flex items-center justify-center bg-zinc-100 dark:bg-zinc-800/30 rounded-t-3xl lg:rounded-tr-none lg:rounded-l-3xl">
-                                            <div className="w-full shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-zinc-800">
+                                            <div
+                                                className="
+                                                    w-full
+                                                    shadow-lg
+                                                    rounded-xl
+                                                    overflow-hidden
+                                                    border
+                                                    border-gray-200
+                                                    dark:border-zinc-800
+                                                "
+                                            >
                                                 <Image
                                                     src={project.image}
                                                     alt={
@@ -95,7 +106,14 @@ export const Projects = () => {
                                                     height={0}
                                                     sizes="100vw"
                                                     priority
-                                                    className="w-full h-auto object-cover"
+                                                    className="
+                                                        w-full
+                                                        h-auto
+                                                        object-cover
+                                                        transition-transform
+                                                        duration-500
+                                                        hover:scale-[1.02]
+                                                    "
                                                 />
                                             </div>
                                         </div>
@@ -150,6 +168,15 @@ export const Projects = () => {
                                                         ),
                                                     )}
                                                 </div>
+
+                                                <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+                                                    {project.methodologies
+                                                        .map(
+                                                            (item) =>
+                                                                item[language],
+                                                        )
+                                                        .join(" • ")}
+                                                </p>
                                             </div>
 
                                             <div className="flex flex-col sm:flex-row gap-3">
@@ -158,17 +185,17 @@ export const Projects = () => {
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="
-                                                        flex
-                                                        items-center
-                                                        justify-center
-                                                        gap-2
-                                                        rounded-xl
-                                                        bg-red-600
-                                                        text-white
-                                                        px-5
-                                                        py-3
-                                                        hover:bg-red-700
-                                                        transition
+                                                    flex
+                                                    items-center
+                                                    justify-center
+                                                    gap-2
+                                                    rounded-xl
+                                                    bg-red-600
+                                                    text-white
+                                                    px-5
+                                                    py-3
+                                                    hover:bg-red-700
+                                                    transition
                                                     "
                                                 >
                                                     <FaFilePdf />
@@ -179,24 +206,22 @@ export const Projects = () => {
                                                     }
                                                 </a>
 
-                                                <a
-                                                    href={project.gallery}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
+                                                <Link
+                                                    href={`/projects/${project.slug}`}
                                                     className="
-                                                        flex
-                                                        items-center
-                                                        justify-center
-                                                        gap-2
-                                                        rounded-xl
-                                                        border
-                                                        border-gray-300
-                                                        dark:border-gray-700
-                                                        px-5
-                                                        py-3
-                                                        hover:bg-gray-100
-                                                        dark:hover:bg-gray-800
-                                                        transition
+                                                    flex
+                                                    items-center
+                                                    justify-center
+                                                    gap-2
+                                                    rounded-xl
+                                                    border
+                                                    border-gray-300
+                                                    dark:border-gray-700
+                                                    px-5
+                                                    py-3
+                                                    hover:bg-gray-100
+                                                    dark:hover:bg-gray-800
+                                                    transition
                                                     "
                                                 >
                                                     <MdDashboard />
@@ -205,7 +230,7 @@ export const Projects = () => {
                                                             language
                                                         ].viewDashboard
                                                     }
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
