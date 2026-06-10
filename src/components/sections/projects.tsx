@@ -17,8 +17,11 @@ import Image from "next/image";
 import { FaFilePdf } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export const Projects = () => {
+    const router = useRouter();
+
     const { language } = useTranslateStore((state) => state);
 
     const [api, setApi] = useState<CarouselApi>();
@@ -67,7 +70,11 @@ export const Projects = () => {
                                 className="basis-full"
                             >
                                 <article
+                                    onClick={() =>
+                                        router.push(`/projects/${project.slug}`)
+                                    }
                                     className="
+                                        cursor-pointer
                                         overflow-hidden
                                         rounded-3xl
                                         border
@@ -181,6 +188,9 @@ export const Projects = () => {
 
                                             <div className="flex flex-col sm:flex-row gap-3">
                                                 <a
+                                                    onClick={(e) =>
+                                                        e.stopPropagation()
+                                                    }
                                                     href={project.pdf}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
@@ -207,6 +217,9 @@ export const Projects = () => {
                                                 </a>
 
                                                 <Link
+                                                    onClick={(e) =>
+                                                        e.stopPropagation()
+                                                    }
                                                     href={`/projects/${project.slug}`}
                                                     className="
                                                     flex
