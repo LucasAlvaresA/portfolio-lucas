@@ -187,7 +187,17 @@ export function ProjectContent({ project }: Props) {
                             </div>
                         </DialogTrigger>
 
-                        <DialogContent className="max-w-[95vw] p-0 border-none bg-transparent shadow-none">
+                        <DialogContent
+                            className="
+                            max-w-[98vw]
+                            w-auto
+                            p-0
+                            border-none
+                            bg-transparent
+                            shadow-none
+                            overflow-visible
+                            "
+                        >
                             <DialogTitle className="sr-only">
                                 {project.project[language]}
                             </DialogTitle>
@@ -197,7 +207,14 @@ export function ProjectContent({ project }: Props) {
                                 alt={project.project[language]}
                                 width={2200}
                                 height={1400}
-                                className="w-full h-auto rounded-xl"
+                                className="
+                                max-w-[95vw]
+                                max-h-[90vh]
+                                w-auto
+                                h-auto
+                                object-contain
+                                rounded-xl
+                                "
                             />
                         </DialogContent>
                     </Dialog>
