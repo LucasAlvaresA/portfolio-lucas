@@ -284,7 +284,7 @@ export const projectsData = [
         },
         image: "/projects/cover-dashboard-rh.png",
         description: {
-            br: "Dashboard de RH focado em indicadores de força de trabalho, perfil dos colaboradores, distribution por função, salários e métricas de engajamento.",
+            br: "Dashboard de RH focado em indicadores de força de trabalho, perfil dos colaboradores, distribuição por função, salários e métricas de engajamento.",
             en: "HR dashboard focused on workforce analytics, employee profiles, job role distribution, salary insights, and engagement metrics.",
             es: "Dashboard de Recursos Humanos centrado en indicadores de fuerza laboral, perfil de colaboradores, distribución por cargo, salarios y métricas de compromiso.",
         },
